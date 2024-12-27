@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>TITLE</h1>
+        </div>
+        <div>
+            <nav class="nav">
+                <ul class="barrenav">
+                    <li class="optNav"><a href="#">Nav1</a></li>
+                    <li class="optNav"><a href="#">Nav2</a></li>
+                    <li class="optNav"><a href="#">Nav3</a></li>
+                    <li class="optNav"><a href="#">Nav4</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+  <main>
+
+    <h2 class="roomDisplay" id="roomDisplay"></h2>
+
+    <div class="ppldiv">
+        <label for="people">PEOPLE :</label>
+        <select id="people" name="people" class="people" required>
+            <option id="option" class="nbrPeople" value="" disabled selected>Choose</option>
+            <option id="option" class="nbrPeople" value='1'> 1 </option>
+            <option id="option" class="nbrPeople" value='2'> 2 </option>
+            // Add as much as you want
+        </select>
+    </div>
+
+    <div id="calendar">
+        <section class="chooseDate">
+        <button id="prevMonth">&lt;</button>
+        <h2 class="monthYear" id="monthYear"></h2>
+        <button id="nextMonth">&gt;</button>
+        </section>
+
+        <table id="calendarTable">
+            <thead>
+                <tr>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                    <th>Sun</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <p id="startDate"> START DATE : </p>
+        <p id="endDate"> END DATE : </p>
+    </div>
+
+    </main>
+
+    <footer class="footer">
+        <div>
+            <p class="prights">&copy; 2024 NAME. All rights deserved</p>
+        </div>
+    </footer>
+
+    <script src="./js/scriptGh.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(128, 128, 128, 0.178);
+  overflow: auto;
+  display: flex;
+  flex-direction: column; 
+  min-height: 100vh; 
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 20px;
+  margin: 0;
+  text-align: center;
+  color: aliceblue;
+  background-color: rgb(1, 158, 1);
+  top: 0;
+}
+
+.barrenav {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color: rgb(0, 170, 0);
+}
+
+.optNav {
+  padding-top: 20px;
+}
+
+.optNav:hover {
+  transition: 0.4s;
+  background-color: rgba(17, 226, 146, 0.87);
+}
+
+main {
+  flex: 1;
+}
+
+.ppldiv {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+label {
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.people {
+  max-width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  appearance: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.people:hover {
+  border-color: #007bff;
+}
+
+.people:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.nbrpeople {
+  padding: 10px;
+  background: #fff;
+  color: #333;
+}
+
+.nbrpeople[value=""] {
+  display: none;
+}
+
+.chooseDate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+h1 {
+  margin-top: 35px;
+}
+
+li {
+  padding: 0 15px 20px 20px;
+  display: inline-block;
+}
+
+#prevMonth,
+#nextMonth {
+  margin: 0 15px;
+}
+
+#calendar {
+  min-width: 300px;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.calendar-date {
+  border: none;
+  background-color: transparent;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+td:hover {
+  background-color: #f0f0f0;
+}
+
+#isReserved {
+  cursor: not-allowed; 
+  pointer-events: none; 
+  width: 100%; 
+  height: 100%; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+#endDate,
+#startDate {
+  position: relative;
+  top: 30px;
+  margin: 20px 0;
+  text-align: left;
+  font-weight: bold;
+}
+
+.footer {
+  color: aliceblue;
+  padding: 10px 0;
+  background-color: rgb(1, 158, 1);
+  margin-top: 50px;
+  position: relative; 
+  z-index: 1;
+}
+
+.prights {
+  margin-left: 5px;
+}

@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(150deg, rgb(243, 237, 243), rgb(221, 179, 221));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.ecran {
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(28, 155, 77, 0.692);
+    background-color: green;
+    height: 150px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.calculette {
+    background-color: rgba(47, 255, 127, 0.61);
+    box-shadow: 0 0 20px inset rgba(28, 155, 77, 0.452);
+    padding: 10px;
+    border: 5px rgba(128, 128, 128, 0.74);
+    border-style: solid double;
+    border-radius: 15px;
+}
+
+.nombres, .operators {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: center;
+}
+
+.operators {
+    gap: 10px;
+}
+
+button {
+    box-shadow: 0 0 3px inset rgba(28, 155, 77, 0.575);
+    border: 2px solid rgba(0, 0, 0, 0.322);
+    border-radius: 15px;
+    background-color: rgb(143, 255, 212);
+    margin: 10px;
+    min-height: 60px;
+    width: 70px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+button:hover {
+    background-color: rgb(131, 235, 195);
+    box-shadow: 0 0 10px rgba(28, 155, 77, 0.459);
+    transform: scale(0.95);
+}
+
+.zero {
+    grid-column-start: 2;
+}
+
+.plus {
+    grid-column-start: 1;
+}
+
+.fois {
+    grid-column-start: 1;
+}
+
+.egal {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.ecran {
+    position: relative;
+}
+
+.ecrit {
+    margin: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 25px;
+    color: greenyellow;
+}

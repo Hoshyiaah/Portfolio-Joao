@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sixtyfour+Convergence&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-shadow: 1px 1px rgb(0, 84, 105);
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Kanit;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h3 {
+    font-weight: 500;
+    animation: hello 0.5s 1 ease-out;
+}
+
+@keyframes hello {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100%;
+    }
+}
+
+header, footer {
+    min-height: 100px;
+    background-color: rgb(0, 84, 105);
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+header {
+    text-align: center;
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main {
+    background-color: rgb(0, 42, 53);
+    flex: 1 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+}
+
+.intro {
+    margin-bottom: 5%;
+    animation: appearLeft 0.5s 1 ease-out;
+}
+
+@keyframes appearLeft {
+    0% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 100%;
+      transform: translateX(0);
+    }
+}
+
+.intros {
+    background-color: rgba(0, 84, 105, 0.26);
+    padding: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.comp {
+    display: flex;
+}
+
+.comps {
+    display: flex;
+    align-items: center;
+}
+
+.subComps {
+    display: flex;
+    align-items: center;
+}
+
+.mesComp {
+    margin-right: 5px;
+}
+
+.find {
+    margin: 7px 0;
+}
+
+li {
+    margin: 5px 0;
+    list-style: none;
+}
+
+strong {
+    color: rgb(181, 220, 255);
+    font-weight: 500;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+}
+
+.example {
+    min-height: 20vh;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.example:hover {
+    filter: opacity(80%)
+}
+
+.scrolled {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.3s ease;
+}
+.scrolled.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.imgGh {
+    max-width: 50vh;
+    min-width: 200px;
+}
+
+.explain {
+    text-align: left;
+    margin: 20px 30px;
+    width: auto;
+    min-width: 30%;
+    max-width: 500px;
+    max-height: 100%;
+}
+
+.explain * {
+    margin: 25px 0;
+}
+
+a {
+    color: white;
+}
+
+@media (max-width: 995px) {
+    .comp {
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    .imgGh {
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 515px) {
+    .comp {
+        flex-direction: column;
+    }
+
+    .comps {
+        display: block;
+    }
+
+    .mesComp {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 775px) {
+    .example {
+        flex-direction: column;
+    }
+
+    .explain {
+        text-align: center;
+    }
+}
